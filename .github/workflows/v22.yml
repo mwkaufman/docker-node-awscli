@@ -1,4 +1,4 @@
-name: sleavely/node-awscli:22.x
+name: mwkaufman/node-awscli:22.x
 
 on:
   push:
