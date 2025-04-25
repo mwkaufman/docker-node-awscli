@@ -6,7 +6,7 @@ RUN install -m 0755 -d /etc/apt/keyrings && \
     chmod a+r /etc/apt/keyrings/docker.asc && echo \
     "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
     $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-    sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 # zip and docker
 RUN apt-get update && apt-get install -y zip docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin && rm -rf /var/lib/apt/lists/*
