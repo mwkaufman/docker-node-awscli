@@ -1,4 +1,4 @@
-name: mwkaufman/node-awscli:22.x
+name: mwkaufman57/node-awscli:22.x
 
 on:
   push:
@@ -25,4 +25,4 @@ jobs:
         with:
           pull: true
           push: true
-          tags: ${{ github.workflow }},mwkaufman/node-awscli:latest
+          tags: ${{ github.workflow }},mwkaufman57/node-awscli:latest
